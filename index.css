@@ -1,0 +1,127 @@
+
+i {
+    font-size: 100px;
+    font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    /* background-color: #e6e6e6; */
+}
+
+body {
+    /* height: 100vh; */
+    /* font-family: 'Quicksand', sans-serif; */
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'about-title about-title'
+        'about about'
+        'skills-title skills-title'
+        'skills skills'
+        'projects-title projects-title'
+        'projects projects'
+        'contact-title contact-title'
+        'contact contaact';
+    grid-template-columns: 8fr 8fr;
+    grid-template-rows: 3fr 1fr 2fr 1fr 3fr 1fr 3fr 1fr 1fr;
+}
+
+
+header {
+    /* background-color: rgb(0, 0, 0); */
+    /* color: white; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: light;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+h2 {
+    font-size: 70px;
+    margin-left: 2%;
+}
+
+div.about,
+/* div.skills, */
+div.projects {
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+
+header {
+    grid-area: header;
+}
+
+h2.about-title {
+    grid-area: about-title;
+}
+
+div.about {
+    grid-area: about;
+}
+
+h2.skills-title {
+    grid-area: skills-title;
+}
+
+div.skills {
+    grid-area: skills;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+
+h2.projects-title {
+    grid-area: projects-title;
+}
+
+div.projects {
+    grid-area: projects;
+    display: flex;
+    align-items: center;
+}
+
+h2.contact-title {
+    grid-area: contact-title;
+}
+
+div.contact {
+    font-size: 40px;
+    grid-area: contact;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.take-a-hike {
+    height: 300px;
+    width: 300px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #82846D;
+    /* color: #714955; */
+    /* color: #80727B; */
+    transition: 0.3s;
+    transform: scale(1.05, 1.05);
+}
